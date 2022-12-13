@@ -54,3 +54,8 @@ In plaats van een keypad met nummer 0 t/m 9, hebben we nu een keypad met 9 kleur
 
 Probeer het spel aan te passen, zodat het kleuren accepteerd ipv nummers
 (hint: gebruikt `scanner.nextLine()` om String waardes van de gebruiker te vragen.)
+
+## Antwoorden
+De antwoorden staan in de "answers" branch.
+De bonus antwoorden staan in de "bonus" branch.
+Weet je niet meer hoe je van branch wisselt? Kijk dan in de leerlijnhandleiding.
