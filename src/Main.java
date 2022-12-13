@@ -10,37 +10,17 @@ public class Main {
         int bomb = random.nextInt(9);
         String input = "";
 
-        while (input!=colors[bomb]) {
+        // We gebruikern hier ".equals()" met "!" (not) voor de expressie, omdat we Strings niet kunnen vergelijken met "=="
+        while (!input.equals(colors[bomb-1])) {
             System.out.println("\nKies een kleur van het keypad om in te drukken");
             input = scanner.nextLine();
-            switch(input) {
-                case "groen" -> {
-
-                }
-                case "oker" -> {
-
-                }
-                case "blauw" -> {
-
-                }
-                case "rood" -> {
-
-                }
-                case "paars" -> {
-
-                }
-                case "aqua" -> {
-
-                }
-                case "wit" -> {
-
-                }
-                case "geel" -> {
-
-                }
-                case "roze" -> {
-
-                }
+            // We kunnen hier nog steeds gemakkelijk een if/else-statement gebruiken.
+            // Omdat we 9 kleuren hebben, denk je al gauw aan een switch-statement, maar alle cases zouden dan alsnog deze if en else bevatten.
+            // Denk er hier ook aan om ".equals()" te gebruiken ipv "==".
+            if(input.equals(colors[bomb-1])){
+                Util.printExplosion();
+            } else {
+                Util.printBomb();
             }
         }
     }
