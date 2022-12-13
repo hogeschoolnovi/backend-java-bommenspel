@@ -42,7 +42,7 @@ Het
 - In de loop printen we als eerst de String `"\nKies een nummer van het keypad om in te drukken"` 
  (`"\n"` betekend "new line")
 - Daarna zeggen zeggen we `input = scanner.nextInt()`
-- Als laatste maken we een if/else-statement OF een switch-statement. (beide zijn mogelijk)
+- Als laatste maken we een if/else-statement OF een switch-statement. (Slechts één keuze is goed)
   - Als `input == bomb`, dan doen we `Util.printExplosion();`,
   - Als `input != bomb`, dan doen we `Util.printBomb();`.
 
