@@ -6,16 +6,41 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
+        String[] colors = {"groen", "oker", "blauw", "rood", "paars", "aqua", "wit", "geel", "roze"};
         int bomb = random.nextInt(9);
-        int input = -1;
+        String input = "";
 
-        while (input!=bomb) {
-            System.out.println("\nKies een nummer van het keypad om in te drukken");
-            input = scanner.nextInt();
-            if (input == bomb) {
-                Util.printExplosion();
-            } else {
-                Util.printBomb();
+        while (input!=colors[bomb]) {
+            System.out.println("\nKies een kleur van het keypad om in te drukken");
+            input = scanner.nextLine();
+            switch(input) {
+                case "groen" -> {
+
+                }
+                case "oker" -> {
+
+                }
+                case "blauw" -> {
+
+                }
+                case "rood" -> {
+
+                }
+                case "paars" -> {
+
+                }
+                case "aqua" -> {
+
+                }
+                case "wit" -> {
+
+                }
+                case "geel" -> {
+
+                }
+                case "roze" -> {
+
+                }
             }
         }
     }
