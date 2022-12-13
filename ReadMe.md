@@ -26,14 +26,14 @@ Het spel bevat:
 
 ## Programmeer stappen
 
-Het 
+
 
 - Als eerst clonen we dit project, zodat we de `src` map, de `Main` class en de `Util` class hebben.
 - In de Main class maken we een `main` method (hiervoor kunnen we het livetemplate `psvm` gebruiken).
 - Vervolgens moeten we een manier maken om de input van de gebruiken in te lezen. 
- Hiervoor maken we een nieuw `Scanner` object met als argument/parameter `System.in`.
+ Hiervoor maken we een nieuw `Scanner` object met als argument `System.in`.
 - We maken ook een nieuw `Random` object, net zoals we dat met Scanner hebben gedaan. 
- Dit object heeft geen argument/parameter nodig.
+ Dit object heeft geen argument nodig.
 - Vervolgens maken we een `int bomb` die als waarde (=) een random int heeft 
  (gebruik hiervoor de `nextInt(9)` methode met als argument 9, omdat we 9 nummers op ons keypad hebben). Dit wordt de random toegewezen locatie van de toets die de bom laat ontploffen.
 - We maken ook een `int input` die we als waarde `-1` geven.
@@ -41,10 +41,10 @@ Het
  De loop blijft loopen zolang `input != bomb`.
 - In de loop printen we als eerst de String `"\nKies een nummer van het keypad om in te drukken"` 
  (`"\n"` betekend "new line")
-- Daarna zeggen zeggen we `input = scanner.nextInt()`
+- Daarna schrijven we een nieuwe waarde toe aan input met `input = scanner.nextInt()`
 - Als laatste maken we een if/else-statement OF een switch-statement. (Slechts één keuze is goed)
-  - Als `input == bomb`, dan doen we `Util.printExplosion();`,
-  - Als `input != bomb`, dan doen we `Util.printBomb();`.
+  - Als `input == bomb`, dan roepen we `Util.printExplosion()` aan,
+  - Als `input != bomb`, dan roepen we `Util.printBomb()` aan.
 
 ## Bonus
 In plaats van een keypad met nummer 0 t/m 9, hebben we nu een keypad met 9 kleuren.
@@ -62,4 +62,4 @@ hints:
 ## Antwoorden
 De antwoorden staan in de "answers" branch.
 De bonus antwoorden staan in de "bonus" branch.
-Weet je niet meer hoe je van branch wisselt? Kijk dan in de leerlijnhandleiding.
+Weet je niet meer hoe je van branch wisselt? Kijk dan nog eens op pagina 8 van de leerlijnhandleiding.
