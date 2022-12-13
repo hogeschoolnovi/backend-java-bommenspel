@@ -53,7 +53,11 @@ In plaats van een keypad met nummer 0 t/m 9, hebben we nu een keypad met 9 kleur
 (kleuren keypad)
 
 Probeer het spel aan te passen, zodat het kleuren accepteerd ipv nummers
-(hint: gebruikt `scanner.nextLine()` om String waardes van de gebruiker te vragen.)
+hints: 
+- gebruik `scanner.nextLine()` om String waardes van de gebruiker te vragen.
+- maak een String array met de waardes `{"groen", "oker", "blauw", "rood", "paars", "aqua", "wit", "geel", "roze"}`
+- gebruik voor je loop `input != colors[bomb-1]` om te bepalen of je nog moet blijven loopen of niet.
+
 
 ## Antwoorden
 De antwoorden staan in de "answers" branch.
