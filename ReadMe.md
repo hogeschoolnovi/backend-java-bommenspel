@@ -28,8 +28,8 @@ Het spel bevat:
 
 Het 
 
-- Als eerste maken we een `src` map met daarin een `Main` class.
-- In de main class maken we een `main` method (hiervoor kunnen we het livetemplate `psvm` gebruiken).
+- Als eerst clonen we dit project, zodat we de `src` map, de `Main` class en de `Util` class hebben.
+- In de Main class maken we een `main` method (hiervoor kunnen we het livetemplate `psvm` gebruiken).
 - Vervolgens moeten we een manier maken om de input van de gebruiken in te lezen. 
  Hiervoor maken we een nieuw `Scanner` object met als argument/parameter `System.in`.
 - We maken ook een nieuw `Random` object, net zoals we dat met Scanner hebben gedaan. 
